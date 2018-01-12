@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  assignment: 
+    build: Assignment
+    ports:
+      - "3000:3000"
+
+  assignment-api:
+    build: Assignment_API
+    links:
+      - "db:db"
+    ports:
+      - "3005:3005"
+
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
