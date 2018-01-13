@@ -1,4 +1,4 @@
-To use this application
+To use this application. Please input command below in the terminal.
 
 - docker-compose up
 
